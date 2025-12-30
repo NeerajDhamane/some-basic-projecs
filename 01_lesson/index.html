@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="author" content="Neeraj" >
+    <meta
+      name="description"
+      content="This page contains all the things that im going to learn in html tut0ril">
+    <title>My First Webpage</title>
+    <link rel="icon" href="html5.jpeg" type="image/x-icon" >
+    <link rel="stylesheet" href="main.css" type="text/css" >
+  </head>
+
+  <body>
+    <header>
+      <h1>My goal for the year!</h1>
+
+      <nav aria-label="primary-navigation">
+        <!--navigate-->
+        <ul>
+          <li><a href="#html">learning html </a></li>
+          <li><a href="#vacation">Planning a vactaion</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <hr >
+    <!--horizontal rular-->
+
+    <main>
+      <article id="html">
+        <h2>I'm ready to learn HTML</h2>
+        <p>This is my first webpage.</p>
+        <section>
+          <h3>HtML 5</h3>
+          <img
+            src="images/html6.webp"
+            alt="HTML6 logo"
+            title="Im learning HTML"
+            width="400"
+            height="400"
+          >
+          <figure>
+            <figcaption>An example of html code</figcaption>
+            <p>
+              <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+            </p>
+          </figure>
+        </section>
+        <section>
+          <h3>My daily schedule</h3>
+          <p>Let me tell you how my day look like:</p>
+
+          <ol>
+            <li>...i explore what is the update</li>
+            <!--&nbsp; is a way to entities to appply space-->
+            <li>...i learn something new</li>
+            <li>...i plan out my schedule</li>
+            <li>
+              ...then i write web dev code from
+              <abbr title="WWWSCHOOL"
+                ><a href="https://www.w3schools.com/">W3S</a></abbr
+              >
+            </li>
+          </ol>
+          <aside>
+            <details>
+              <summary>
+                Guess the <mark>number of hour</mark> i code per day?
+              </summary>
+              <p>
+                i start at <time datetime="02:00">2pm</time> and code for
+                <time datetime="PT3H">3 hours</time>
+              </p>
+            </details>
+          </aside>
+          <br>
+          <table>
+            <caption>my daily schedule</caption>
+
+            <thead>
+                <tr>
+                    <th>&nbsp;</th>
+                    <th scope="col">Time</th>
+                    <th scope="col"> Activity</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th scope="col">Morning</th>
+                    <td><time datetime="02:00">2pm</time>-<time datetime="05:00">5pm</time></td>
+                    <td> Write code</td>
+                </tr>
+
+                <tr>
+                    <th  scope="col">Break</th>
+                    <td>
+                    <time datetime="05:00">5pm</time>-<time datetime="06:00">6pm</time></td>
+                    <td>Lunch</td>
+                </tr>
+                    <tr>
+                    <th  scope="col">Aftternoon</th><td>
+                    <time datetime="06:00">6pm</time>-<time datetime="08:00">8pm</time></td>
+                    <td> Gyminng</td>
+                </tr>
+            
+                <tr>
+                    <th  scope="col">Evening</th>   
+                    <td rowspan="2">All other time</td>
+                    <td>Free time</td>
+                </tr>
+
+                <tr>
+                    <th scope="col">Night</th>
+                    <td > sleep </td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="3">And thats what i do </td>
+                </tr>
+            </tfoot>
+          </table> 
+        </section>
+      </article>
+
+      <hr>
+
+      <article id="vacation">
+        <h2>I'm planning a vacation</h2>
+
+        <p>
+          i'm tired of exams i <em>really need a gateaway from this shit.</em>
+        </p>
+        <!--<em>=emphasise means slanting way writing-->
+        <p>i live in kashmir so i want to visit a beach</p>
+        <section>
+          <h3>places i'd love to a visit</h3>
+          <ul>
+            <li>
+              <p>i've heard good things about konkan</p>
+
+              <figure>
+                <img
+                  src="images/konkan.jpg"
+                  alt="Konkan"
+                  title="Konkan beach"
+                  width="400"
+                  height="400"
+                  loading="lazy">
+                <figcaption>koakan beach</figcaption>
+              </figure>
+            </li>
+
+            <li>
+              <p>i've heard good things about going here</p>
+              <address>
+                Location: Ratnagiri district, Maharashtra.
+                <br>Best Experience: Visit ule and soak in all the freshness.
+                <br>Timing: Visit Ganpatipule in Winter
+              </address>
+            </li>
+          </ul>
+        </section>
+
+        <div></div>
+        <span></span>
+        <section>
+          <h3>places i want to avoid</h3>
+          <dl>
+            <dt>North Pole</dt>
+            <dd>I hear this is <strong>cold</strong></dd>
+
+            <dt>South Pole</dt>
+            <dd>I heard this is also cold.</dd>
+
+            <dt>Mountains</dt>
+            <dd>These are also cold</dd>
+          </dl>
+        </section>
+      </article>
+      <hr>
+      <article id="contact">
+        <h2>Contact me</h2>
+        <p>I would love to hear your opinion :</p>
+
+          <form action="https://httpbin.org/get" method="get">
+
+          <fieldset>
+          <legend>Personal Info</legend>
+          <p><label for="firstName">First Name:</label>
+          <input type ="text" name="firstName"
+          id="firstName" placeholder="Aditya" autocomplete="on" required autofocus>
+          </p> 
+
+          <p>
+          <label for="lastName">Last Name:</label>
+          <input type ="text" name="lastName"
+          id="lastName" placeholder="Rao" autocomplete="on" required >
+          </p>
+
+          <p>
+          <label for="password">password :</label>
+          <input type ="password" name="password"
+          id="password" placeholder="Aditya@rao"  required >
+          </p>
+          
+          <p>
+          <label for="phoneNo"> Phone Number:</label>
+          <input type ="tel" name="phoneNo"
+          id="phoneNo" placeholder="5555555555" pattern="[0-9]{10}" required >
+          </p>
+
+          <p>
+          <label for="birthYear"> Birth Year:</label>
+          <input type ="number" name="birthYear"
+          id="birthYear" min="1950" max="2025" step="1" value="2003" required >
+          </p>
+
+          <p>
+            
+            <label for="coffee">Which coffe do you like?</label>  
+            <select name="coffee" id="coffee">
+
+              <optgroup label="coffees">
+              
+              <option value="regular coffee" selected >Regular Coffee</option>
+              <option value="cold coffee">cold Coffee</option>
+              </optgroup>
+
+              <optgroup label="Expressos">
+              <option value="latte ">latte </option>
+              <option value="cappucinno ">cappucinno </option>
+              <option value="cotado">cortado </option>
+              <option value="americano">americano </option>
+              </optgroup>
+              <option value="others">Others</option>
+
+            </select>
+          </p>
+          <!-- <p>
+            <label for="coffee">Fav Coffee</label>
+            <input type="text" name="coffee" id="coffee" list="coffee-list">
+            <datalist id="coffee-list">
+              <option value="Regular Coffee">
+              <option value="latte">
+              <option value="espresso">
+              <option value="cortado">
+              <option value="americano">
+              <option value="other">
+            </datalist>
+          </p> -->
+          </fieldset>
+          <br>
+          <fieldset>
+          <legend>What is ur fvt food btw?</legend>
+            <p>
+              <input type="radio" name="food" id="pizza" value="pizza">
+              <label for="pizza">pizza</label>
+            </p>
+            <p>
+              <input type="radio" name="food" id="tacos" value="tacos">
+              <label for="tacos">Tacos</label>
+            </p>
+            <p>
+              <input type="radio" name="food" id="otherFood" value="others">
+              <label for="otherFood">others</label>
+            </p>
+            </fieldset>
+
+            <fieldset>
+
+              <legend>What pet do u have?</legend>
+              <p>
+                <input type="checkbox" name="pets" id="dog" value="dog">
+                <label for="dog">Dog</label>
+              </p>
+              <p>
+                <input type="checkbox" name="pets" id="cat" value="cat">
+                <label for="cat">Cat</label>
+              </p>
+              <p>
+                <input type="checkbox" name="pets" id="parrot" value="parrot">
+                <label for="parrot">parrot</label>
+              </p>
+              <p>
+                <input type="checkbox" name="pets" id="otherPets" value="others">
+                <label for="otherPets">Other</label>
+              </p>
+
+            </fieldset>
+
+            <fieldset>
+              <legend>Send Me a note</legend>
+
+              <label for="message">Your message</label>
+              <br>
+              <textarea name="message" id="message" cols="30" rows="10" placeholder="Type you msg here "></textarea>
+
+            </fieldset>
+            <br>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+      </article>
+    </main>
+    <hr>
+    <footer>
+      <p>&lt;&lt;&copy; <a href="about.html">Neeraj </a>&gt;&gt;</p>
+      <!--  &lt; == less than < &gt; == greater than > -->
+      <p>
+        <a href="#">Back to top .</a>
+      </p>
+    </footer>
+  </body>
+</html>
