@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: monospace;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+    background-color: #b1b2b3;
+    color: #111827;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#heading {
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    padding: 20px;
+    background-color: red;
+    color: #fff;
+}
+
+#main {
+    user-select: none;
+    width: min(1000px, 100%);
+    margin: 0 auto;
+    margin-top: 30px;
+    columns: 5;
+    /* number of columns */
+    column-gap: 10px;
+    /* gap between columns */
+}
+
+#card {
+    display: inline-block;
+
+    /* required for columns */
+    width: 100%;
+    /* take full column width */
+    margin-bottom: 6px;
+    /* vertical spacing */
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+#card>img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#text {
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    bottom: -40%;
+    background-color: black;
+    color: #f9fafb;
+    border-radius: 20px;
+    background: linear-gradient(transparent, black);
+    transition: all 0.3s ease;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 120%;
+}
+
+
+#card:hover #text {
+    bottom: 0;
+
+}
+
+
+#text>i {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+#text>i:hover {
+    color: rgb(232, 6, 6);
+}
+
+#text>i:active {
+    color: rgb(232, 6, 6);
+    transform: scale(0.95);
+}
