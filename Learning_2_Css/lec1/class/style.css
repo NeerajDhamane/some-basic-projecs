@@ -1,0 +1,36 @@
+@font-face {
+    font-family: hhhh;
+    src: url(./Christmas\ Magical.otf);
+}
+/* boiler plate  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(27, 26, 26);
+}
+
+h2{
+    color: greenyellow;
+    font-size: 40px;
+    font-family: hhhh;
+    font-weight: 400;
+    font-style: oblique;
+    text-align: center;
+    text-transform: lowercase;
+}  
+
+#newid{
+    color: azure;
+    /* font-size: larger; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.newing{
+    font-style: italic;
+}
