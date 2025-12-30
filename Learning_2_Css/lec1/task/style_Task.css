@@ -1,0 +1,78 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Page Style */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f7ff;
+  color: #111;
+  line-height: 1.6;
+}
+
+/* Header Section */
+.header {
+  background: rgb(1, 1, 98);
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.header h3 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* Section Styles */
+section {
+  padding: 50px 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+section h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+section p {
+  max-width: 700px;
+  margin: 0 auto 20px;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* Individual Section Colors */
+.about { background: #fffaf0; }        /* Soft cream */
+.education { background: #e3f2fd; }   /* Light blue */
+.skills { background: #fff3cd; }      /* Pale yellow */
+.projects { background: #ede7f6; }    /* Soft lavender */
+.contact { background: #e8f5e9; }     /* Light green */
+
+/* Items inside sections */
+.item {
+  background: white;
+  padding: 15px 20px;
+  margin: 12px auto;
+  max-width: 600px;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 1.05rem;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover Effect */
+.item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
