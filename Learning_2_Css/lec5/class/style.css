@@ -1,0 +1,110 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  height: 100%;
+  width: 100%;
+}
+body{
+  background: #000;
+}
+
+/*(1) making the div centre without flex 
+#hehe{
+  height: 150px;
+  width: 150px;
+  background-color: red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+*/
+
+/* Learning FlexBox 
+#parent{
+  background-color: #000;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center; y axis 
+  justify-content: center;  x axis jaise hum likte he 
+  flex-direction: row;  Default means x axis is main axis y is cross axis
+  flex-direction: column;
+}
+*/
+/*
+| `flex-direction` | Main Axis | Cross Axis |
+| ---------------- | --------- | ---------- |
+| `row`            | X-axis    | Y-axis     |
+| `column`         | Y-axis    | X-axis     |
+*//*
+#child1{
+  height: 150px;
+  width: 150px;
+  background-color: red;
+  border: 3px solid rgb(43, 67, 171);
+  border-radius: 10px;
+}
+#child2{
+  height: 150px;
+  width: 150px;
+  background-color: rgb(33, 157, 138);
+  border: 3px solid rgb(43, 67, 171);
+  border-radius: 10px;
+}
+#child3{
+  height: 150px;
+  width: 150px;
+  background-color: rgb(0, 255, 123);
+  border: 3px solid rgb(43, 67, 171);
+  border-radius: 10px;
+}
+*/
+/*
+| `flex-direction` | Main axis direction |
+| ---------------- | ------------------- |
+| `row` (default)  | Left → Right        |
+| `row-reverse`    | Right → Left        |
+| `column`         | Top → Bottom        |
+| `column-reverse` | Bottom → Top        |
+*/
+
+
+/* learning shrinking wrap wrup */
+#parent{
+  background-color: #000;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;/*default with shrink as 0*/
+  /* flex-wrap: wrap; */
+  overflow: auto;
+}
+#child1{
+  height: 150px;
+  width: 150px;
+  background-color: red;
+  border: 3px solid rgb(43, 67, 171);
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+#child2{
+  height: 150px;
+  width: 150px;
+  background-color: rgb(33, 157, 138);
+  border: 3px solid rgb(43, 67, 171);
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+#child3{
+  height: 150px;
+  width: 150px;
+  background-color: rgb(0, 255, 123);
+  border: 3px solid rgb(43, 67, 171);
+  border-radius: 10px;
+  flex-shrink: 0;
+}
