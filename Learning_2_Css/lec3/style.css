@@ -1,0 +1,148 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body{
+  height: 100%;
+  width: 100%;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    background-color: antiquewhite;
+    position: relative;
+}
+
+#nav{
+    padding: 3vh 2vw;
+}
+
+#nav a{
+    text-decoration: none;
+    color: black;
+    margin-right: 2vw;
+    font-size: 1.2rem;
+}
+
+.main>h1{
+    font-size: 20vh;
+    font-weight: 500;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin-top: 4vh;
+}
+
+#bottomleft{
+    position: absolute;
+    width: 20vw;
+    bottom: 15%;
+    left: 3%;
+}
+
+#bottomleft h4{
+    margin-top: 5vh;
+}
+
+#footer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2vh 0;
+    padding-left: 4.7vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#footer>h2{
+    font-style: italic;
+    font-weight: 100;
+}
+
+#footer>a{
+    color: black;
+    text-decoration: none;
+    padding-right: 4.7vw;
+    font-size: 2.2vh;
+}
+
+.main>img{
+    position: absolute;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+#one{
+    top: 30vh;
+    left: 60vw;
+    height: 30vh;
+    width: auto;
+    z-index: 4;
+    transform: rotate(-5deg);
+}
+
+#two{
+    top: 45vh;
+    left: 30vw;
+    height: 25vh;
+    width: auto;
+    z-index: 2;
+    transform: rotate(8deg);
+}
+
+#three{
+    top: 50vh;
+    left: 45vw;
+    height: 28vh;
+    width: auto;
+    z-index: 3;
+    transform: rotate(-3deg);
+}
+
+.main>img:hover{
+    transform: scale(1.05) rotate(0deg);
+    z-index: 10;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+}
+
+@media screen and (max-width: 768px){
+    .main>h1{
+        font-size: 12vh;
+        margin-top: 2vh;
+    }
+
+    #bottomleft{
+        width: 40vw;
+        bottom: 10%;
+        left: 5%;
+    }
+
+    #footer>a{
+        font-size: 2vh;
+    }
+
+    #one{
+        top: 25vh;
+        left: 55vw;
+        height: 25vh;
+    }
+
+    #two{
+        top: 40vh;
+        left: 25vw;
+        height: 20vh;
+    }
+
+    #three{
+        top: 45vh;
+        left: 40vw;
+        height: 22vh;
+    }
+}
